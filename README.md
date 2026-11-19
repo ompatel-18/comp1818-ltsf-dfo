@@ -35,12 +35,15 @@ Dispersive Flies Optimisation (DFO).
 | `convergence.pdf` | Best-so-far validation MSE per evaluation | Figure 1 |
 
 Three files were compiled from the notebook outputs rather than written by the notebook
-directly: `all_search_trials.csv` combines the search logs of Cells 5, 7 and 8;
-`final_test_results.csv` summarises the per-run test results of Cell 6 as mean and s.d.;
-and `convergence.pdf` re-plots `tuning_trials.csv` with publication styling (Cell 6 draws
+directly: `all_search_trials.csv` combines the search logs of notebook sections 5, 7 and 8;
+`final_test_results.csv` summarises the per-run test results of section 6 as mean and s.d.;
+and `convergence.pdf` re-plots `tuning_trials.csv` with publication styling (section 6 draws
 the same curves).
 
-Note on the search space: the decoding in Cell 3 maps the kernel range (5, 75) with
+The test result of the best DFO configuration from seed 2 (L = 456, k = 5) is printed in
+notebook section 9; that section was run on a CPU runtime because no GPU was available.
+
+Note on the search space: the decoding in section 4 maps the kernel range (5, 75) with
 rounding, so the kernel sizes actually tested were odd values from 5 to 77.
 
 ## Setup used
