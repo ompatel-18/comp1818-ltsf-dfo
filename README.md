@@ -34,6 +34,15 @@ Dispersive Flies Optimisation (DFO).
 | `final_variants.csv` | Test MSE/MAE of the DFO variant winners | Table 2 |
 | `convergence.pdf` | Best-so-far validation MSE per evaluation | Figure 1 |
 
+Three files were compiled from the notebook outputs rather than written by the notebook
+directly: `all_search_trials.csv` combines the search logs of Cells 5, 7 and 8;
+`final_test_results.csv` summarises the per-run test results of Cell 6 as mean and s.d.;
+and `convergence.pdf` re-plots `tuning_trials.csv` with publication styling (Cell 6 draws
+the same curves).
+
+Note on the search space: the decoding in Cell 3 maps the kernel range (5, 75) with
+rounding, so the kernel sizes actually tested were odd values from 5 to 77.
+
 ## Setup used
 
 Python and PyTorch on Google Colab with an NVIDIA T4 GPU. Fixed initial seed 2021
